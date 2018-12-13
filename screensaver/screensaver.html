@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>ScreenSaver - Roman Havryliv</title>
+	<link type="text/css" href="main.css" rel="stylesheet">
+	
+</head>
+
+<body>
+    <div id='header'>
+		<h1>ScreenSaver</h1>
+		<p id='description'>ScreenSaver will start after <strong>10</strong> seconds of inactivity on the page.</p>
+	</div>
+	<hr>
+	<h3>ScreenSaver settings:</h3>
+	<label>Input time of inactivity (min 2 sec):</label>
+    <input type='number' id='inactivity-time' value='10' min='2' step='1'>
+	<p />
+	<label>Input interval between pictures change (min 2 sec):</label>
+    <input type='number' id='interval' value='5' min='2' step='1'>
+    <button id='but'>Save settings</button>
+    <div id='screensaver'>
+		<img id='image'>
+			<img id='image-inside'></img>
+		</img>	
+	</div>
+	
+	<script src="screensaver.js"></script>
+</body>
+
+</html>
