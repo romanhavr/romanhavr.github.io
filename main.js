@@ -29,7 +29,7 @@ works = [
   },
 ];
 
-works.map( work => {  
+works.map( (work, index) => {  
 
   let table = document.querySelector('.table');
   let rowDescription = document.createElement('div');
@@ -41,6 +41,7 @@ works.map( work => {
   let aDemo = document.createElement('a');
   let aCode = document.createElement('a');
   let cell = document.createElement('div');
+  let br = document.createElement('br');
 
   rowDescription.className = 'row';
   rowImage.className = 'row';
@@ -68,5 +69,9 @@ works.map( work => {
   cell.appendChild(rowButtons);
 
   table.appendChild(cell);
+  if (Math.floor(index/2) !== index/2) {
+    table.appendChild(br);
+  }
+
   }
 )
