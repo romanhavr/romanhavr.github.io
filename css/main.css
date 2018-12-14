@@ -55,11 +55,8 @@ body {
 }
 
 .cell {
-  display: table-cell;
+  display: inline-block ;
   padding: 15px;
-}
-
-.item {
   width: 210px;
 }
 
