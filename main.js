@@ -1,8 +1,15 @@
 works = [
   {
+    demoUrl: 'projects/youviewer/index.html',
+    codeUrl: 'https://github.com/romanhavr/youviewer',
+    description: 'YouViewer - <br>third party API app.',
+    imageUrl: 'images/youviewer.jpg',
+    imageAlt: 'youviewer'
+  },
+  {
     demoUrl: 'projects/screensaver/screensaver.html',
     codeUrl: 'https://github.com/romanhavr/screensaver',
-    description: 'Simple screensaver coded with JavaScript.',
+    description: 'Simple screensaver <br>coded with JavaScript.',
     imageUrl: 'images/screensaver.jpg',
     imageAlt: 'screensaver'
   },

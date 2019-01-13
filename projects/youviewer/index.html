@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+    <script
+      defer
+      type="text/javascript"
+      src="main.js"
+    >
+    </script>
+    <script
+      defer
+      type="text/javascript"
+      src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};loadClient()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()"
+    ></script>
+  </head>
+  <body>
+<!-- Header part -->  
+    <div class="header">
+      <h1>
+        <img
+          class="title-image"
+          src="public/title-img.png"
+          alt="youviewer"
+          height="80px"
+        >
+        <span class="subtitle">watching Youtube videos...</span>
+      </h1>
+      <span>
+        <input
+          class="search-input"
+          id="search-input"
+          type="text"
+          placeholder="Search..."
+        >
+        <button id="search-button">
+          Search
+        </button>
+      </span>
+    </div>
+<!-- Content part -->  
+    <div class="content content-display" id="content">
+  <!-- Chosen video part -->  
+      <div>
+      <div
+        class="video-chosen margin-auto"
+        id="video-chosen"
+      >
+        <iframe
+          id="chosen-iframe"
+          width="640"
+          height="360"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        >
+        </iframe>
+        <h3
+          id="chosen-title"
+          class="chosen-title"
+        >
+        </h3>
+        <div
+          id="chosen-channel"
+          class="chosen-channel"
+        >
+        </div>
+        <div
+          id="chosen-description"
+          class="chosen-description">Description</div>
+        </div>
+      </div>
+      
+  <!-- Search results part -->      
+      <div
+        class="search-results search-results-width margin-auto"
+        id="search-results-div"
+      >
+        <h4>
+          <span
+            id="search-results"
+            class="search-results-title"
+          >
+            Search results:
+          </span>
+          <span 
+            id="related-videos" 
+            class="search-results-title"
+          >
+              Related videos:
+            </span>
+        </h4>
+        <div>
+          <span id="first-page" class="pages first"> &laquo;&laquo;</span>
+          <span id="prev" class="pages">&laquo; &nbsp;</span>
+          <span id="page" class="page-counter"></span>
+          <span id="next" class="pages">&nbsp; &raquo;</span>
+        </div>
+        <div class="video-list-grid" id="video-list"></div>
+        <div>
+          <span id="first-page-bottom" class="pages first"> &laquo;&laquo;</span>            
+          <span id="prev-bottom" class="pages"> &laquo; &nbsp;</span>
+          <span id="page-bottom" class="page-counter"></span>
+          <span id="next-bottom" class="pages">&nbsp; &raquo;</span>
+        </div>
+        
+        <h5
+          id="sorting-visibility-arrow"
+          class="sorting-visibility-arrow"
+        >
+          Sorting: &#9660;
+        </h5>
+        <ul 
+          class="sorting"
+          id="sorting"
+        >
+          <li>
+            <span class="sorting-inputs">order by</span>
+            <select id="order">
+              <option value="date">date</option>
+              <option value="rating">rating</option>
+              <option value="relevance" selected>relevance (default)</option>
+              <option value="title">title</option>
+              <option value="viewCount">view count</option>
+            </select>
+          </li>
+          <li>
+            <span class="sorting-inputs">published after</span>
+            <input
+              id="time-after"
+              type="datetime-local"
+            >
+            <span
+              class="time-valid"
+              id="time-after-valid"
+            >
+              Enter valid dates and times!
+            </span>
+          </li>
+          <li>
+            <span class="sorting-inputs">published before</span>
+            <input
+              id="time-before"
+              type="datetime-local"
+            >
+            <span
+              class="time-valid"
+              id="time-before-valid"
+            >
+              * <b>Published after</b> can not be later than <b>Publish before</b>.
+            </span>
+          </li>
+          <li>
+            <span class="sorting-inputs">video definition</span>
+            <select id="video-definition">
+              <option value="high">high</option>
+              <option value="standard">standard</option>
+              <option value="any" selected>any (default)</option>
+            </select>
+          </li>
+          <button
+            class="sort-button sort-button-margin-top"
+            id="sort-button"
+          >
+            Sort
+          </button>
+        </ul>
+        
+      </div>
+    </div>
+    <div class="footer">
+      <a href="http://youtube.com">
+        <img
+          alt="visit youtube"
+          src="public/youtube-logo.png"
+          height="40"
+        >
+        Visit Youtube page
+      </a>
+      <h4>Created by <i>romanhavr</i></h4>
+    </div>
+  </body>
+  </html>
