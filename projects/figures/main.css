@@ -1,0 +1,59 @@
+.header {
+  min-height: 50px;
+  height: 10%;
+  display: flex;
+  padding-left: 30px;
+  justify-content: space-between;
+}
+
+.header span {
+  margin-right: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.content {
+  min-height: 300px;
+  height: 85%;
+  display: flex;
+}
+
+.canvas {
+  border: 1px solid grey;
+}
+
+.side {
+  padding: 5px;
+  width: 265px;
+}
+
+.fieldset {
+  width: 90%;
+}
+
+.about {
+  position: absolute;
+  width: 70%;
+  max-height: 80%;
+  top: 10%;
+  left: 15%;
+  z-index: 100;
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: rgb(240, 240, 240);
+  overflow-y: scroll;
+}
+
+.close {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.footer {
+  min-height: 30px;
+  height: 5%;
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 30px;
+}

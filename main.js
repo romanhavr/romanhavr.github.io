@@ -1,5 +1,12 @@
 works = [
   {
+    demoUrl: 'projects/figures/index.html',
+    codeUrl: 'https://github.com/romanhavr/3-pointFigures',
+    description: '3-point Figures Building -<br>HTML/JS app<br>(using <b>canvas</b> tag).',
+    imageUrl: 'images/figures.jpg',
+    imageAlt: '3-point Figures Building'
+  },
+  {
     demoUrl: 'projects/youviewer/index.html',
     codeUrl: 'https://github.com/romanhavr/youviewer',
     description: 'YouViewer - <br>third party API app.',

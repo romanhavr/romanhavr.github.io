@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      3-point figures building
+    </title>
+    <link type="text/css" href="main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id='header' class='header'>
+      <h1>3-point Figures Building</h1>
+      <span id='about-span'>About</span>
+    </div>
+
+    <div id='content' class='content'>
+      <canvas id='canvas' class='canvas'>
+      </canvas>
+      <div id='side' class='side'>
+        <fieldset class='fieldset'>
+          <legend>
+            Coordinates of points
+          </legend>
+          <b>Point #1</b>:
+          <br>
+          x = <span id='x1'></span>
+          <br>
+          y = <span id='y1'></span>
+          <br>
+          <b>Point #2</b>:
+          <br>
+          x = <span id='x2'></span>
+          <br>
+          y = <span id='y2'></span>
+          <br>
+          <b>Point #3</b>:
+          <br>
+          x = <span id='x3'></span>
+          <br>
+          y = <span id='y3'></span>
+          <br>
+        </fieldset>
+        <br>
+        <fieldset class='fieldset'>
+          <legend>
+            Area of figures
+          </legend>
+          S = <span id='s'></span> square pixels
+        </fieldset>
+        <br>
+        <button id='reset'>
+          Reset
+        </button>
+      </div>
+      <div id='about' class='about'>
+        <h3>Information about "3-point Figures Building" app</h3>
+        <h4>About</h4>
+        <p>
+          <b>3-point Figures Building</b> application is an application that builds
+          parallelogram using three points pointed by user with left mouse click on 
+          bordered area. Also it builds a circle that has the same <i>area</i> and
+          <i>mass center</i> as the parallelogram.
+        </p>
+        <p>
+          User can see the coordinates of points that he pointed and the area of the
+          builded figures on the right side bar and change it by moving any of those
+          points.
+        </p>
+        <p>  
+          User also can start all the process from the very beginning clicking 
+          <b>Reset</b> button.
+        </p>
+        <h4>How to use</h4>
+        <ul>
+          <li>
+            point three times on bordered area by left mouse clicking - you will have
+            three point as result;
+          </li>
+          <li>
+            <i>application will build parallelogram and circle using those points 
+            automatically;</i>
+          </li>
+          <li>
+            move any of your points to change it coordinates and the figures will
+            rebuild;
+          </li>
+          <li>
+            press <b>Reset</b> button to clear the bordered area and start all the
+            process from the very beginning.
+          </li>
+        </ul>
+        <h4>Developer</h4>
+        <p>
+          <b>Roman Havryliv</b> (Front-End Developer) is the developer of this app.
+        </p>
+        <button id='close' class='close'>
+          Close
+        </button>
+      </div>
+    </div>
+
+    <div id='footer' class='footer'>
+      Created by <b><i>romanhavr</i></b>
+    </div>
+
+    <script type='text/javascript' src='main.js'>
+    </script>
+  </body>
+</html>
