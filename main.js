@@ -1,5 +1,12 @@
 works = [
   {
+    demoUrl: 'http://drag-and-drop-uploader.eu5.org/',
+    codeUrl: 'https://github.com/romanhavr/drag-and-drop-uploader',
+    description: 'Drag&Drop Uploader -<br>HTML/JS app<br>(using <b>third party API</b>).',
+    imageUrl: 'images/drag-and-drop.jpg',
+    imageAlt: 'Drag&Drop Web File Ulpoader'
+  },
+  {
     demoUrl: 'projects/figures/index.html',
     codeUrl: 'https://github.com/romanhavr/3-pointFigures',
     description: '3-point Figures Building -<br>HTML/JS app<br>(using <b>canvas</b> tag).',
