@@ -1,6 +1,13 @@
 works = [
   {
-    demoUrl: 'http://drag-and-drop-uploader.eu5.org/',
+    demoUrl: 'http://http://proj.eu5.org',
+    codeUrl: 'https://github.com/romanhavr/Phaser-2-game',
+    description: 'Match Three Game -<br>HTML 5 / Phaser game.',
+    imageUrl: 'images/match-3-game.jpg',
+    imageAlt: 'Match Three Game'
+  },
+  {
+    demoUrl: 'http://drag-and-drop-uploader.eu5.org',
     codeUrl: 'https://github.com/romanhavr/drag-and-drop-uploader',
     description: 'Drag&Drop Uploader -<br>HTML/JS app<br>(using <b>third party API</b>).',
     imageUrl: 'images/drag-and-drop.jpg',
