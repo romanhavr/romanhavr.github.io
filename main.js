@@ -2,7 +2,7 @@ works = [
   {
     demoUrl: 'https://react-3rd-party-api.herokuapp.com',
     codeUrl: 'https://github.com/romanhavr/React-3rd-party-api',
-    description: '3-rd Party API projects -on <br><b>React.</b>',
+    description: '3-rd Party API projects - <br>on <b>React.</b>',
     imageUrl: 'images/react-3rd-party-api.jpg',
     imageAlt: '3-rd Party API projects on React.'
   },
