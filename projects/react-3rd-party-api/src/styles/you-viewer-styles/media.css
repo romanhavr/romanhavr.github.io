@@ -1,0 +1,132 @@
+@media screen and (min-width: 1440px) {
+    .search-results-width {
+      width: 1200px;
+    }
+    
+    .search-results-width-side {
+      width: 600px;
+    }
+    
+    .video-list-grid {
+      display: grid;
+      grid-gap: 2px;
+      grid-template-columns:  repeat(3, 400px);
+    }
+    
+    .video-list-grid-side {
+      display: grid;
+      grid-gap: 2px;
+      grid-template-columns:  repeat(3, 200px);
+    }
+  
+    .item-list {
+      width: 400px;
+      position: relative;
+      padding: 0;
+      cursor: pointer;
+    }
+  
+    .item-list-image {
+      width: 400px;
+    }
+
+    .video-list-grid-side .item-list {
+      width: 200px;
+    }
+
+    .video-list-grid-side .item-list-image {
+      width: 200px;
+      margin: 0;
+    }
+  
+    .content-display {
+      display: flex;
+    }
+  
+    .sort-button-margin-top {
+      margin-top: -2.7em;
+    }
+  }
+  
+  @media screen and (max-width: 1439px) {
+    .search-results-width {
+      width: 900px;
+    }
+    
+    .search-results-width-side {
+      width: 300px;
+    }
+    
+    .video-list-grid {
+      display: grid;
+      grid-gap: 2px;
+      grid-template-columns:  repeat(3, 300px);
+    }
+    
+    .video-list-grid-side {
+      display: inline-block;
+    }
+  
+    .item-list {
+      width: 300px;
+      position: relative;
+      padding: 0;
+      cursor: pointer;
+    }
+  
+    .item-list-image {
+      width: 300px;
+      margin: 0;
+    }
+  
+    .content-display {
+      display: flex;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .search-results-width {
+      width: 600px;
+    }
+    
+    .search-results-width-side {
+      width: 200px;
+    }
+    
+    .video-list-grid {
+      display: grid;
+      grid-gap: 2px;
+      grid-template-columns:  repeat(3, 200px);
+    }
+    
+    .video-list-grid-side {
+      display: inline-block;
+    }
+  
+    .item-list {
+      width: 200px;
+      position: relative;
+      padding: 0;
+      cursor: pointer;
+    }
+  
+    .item-list-image {
+      width: 200px;
+      margin: 0;
+    }
+  
+    .content-display {
+      display: flex;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .margin-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .content-display {
+      display: inline;
+    }
+  }

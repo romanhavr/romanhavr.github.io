@@ -1,0 +1,22 @@
+.header {
+    justify-content: space-between;
+    display: flex;
+    padding: 0 50px;
+  }
+  
+  .header h1 {
+    margin-bottom: 0;
+  }
+  
+  .title-image {
+    height: 80px;
+  }
+  
+  .subtitle {
+    font-size: 14pt;
+    vertical-align: text-top;
+  }
+  
+  .header span {
+    margin: 40px;
+  }

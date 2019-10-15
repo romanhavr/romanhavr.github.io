@@ -1,5 +1,12 @@
 works = [
   {
+    demoUrl: 'projects/react-3rd-party-api/build/index.html',
+    codeUrl: 'https://github.com/romanhavr/React-3rd-party-api',
+    description: '3-rd Party API projects -on <br><b>React.</b>',
+    imageUrl: 'images/react-3rd-party-api.jpg',
+    imageAlt: '3-rd Party API projects on React.'
+  },
+  {
     demoUrl: 'http://http://proj.eu5.org',
     codeUrl: 'https://github.com/romanhavr/Phaser-2-game',
     description: 'Match Three Game -<br>HTML 5 / Phaser game.',

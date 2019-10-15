@@ -1,0 +1,13 @@
+p {
+    font-size: 1.1em;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin: 30px;
+}
