@@ -1,6 +1,6 @@
 works = [
   {
-    demoUrl: 'projects/react-3rd-party-api/build/index.html',
+    demoUrl: 'https://react-3rd-party-api.herokuapp.com',
     codeUrl: 'https://github.com/romanhavr/React-3rd-party-api',
     description: '3-rd Party API projects -on <br><b>React.</b>',
     imageUrl: 'images/react-3rd-party-api.jpg',
