@@ -45,6 +45,8 @@ function handleFileSelect(evt) {
 // -------------------------------------
 
 function buildSchedule(tableJSON) {
+  const start = performance.now();
+  
   const classes = [
     {
       id: 1,
@@ -1014,6 +1016,9 @@ function buildSchedule(tableJSON) {
     teacherTable +
     "<br><p>CLASS TABLE</p>" +
     classTable;
+  
+  const end = performance.now();
+  console.log("TIME - ", end-start);
 
   function buildScheduleForClasses() {
     scheduleForClasses = {};
