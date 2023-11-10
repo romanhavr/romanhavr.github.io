@@ -404,15 +404,16 @@ function buildSchedule(tableJSON) {
     },
   };
 
-  const input = document.getElementById("recommendedLessonsAtOnce");
-  let schoolRecommendedHoursAtOnce = input.value || 1;
-  if (schoolRecommendedHoursAtOnce > 2) {
-    schoolRecommendedHoursAtOnce = 2;
-  }
-  if (schoolRecommendedHoursAtOnce < 1) {
-    schoolRecommendedHoursAtOnce = 1;
-  }
-  input.value = schoolRecommendedHoursAtOnce;
+  // const input = document.getElementById("recommendedLessonsAtOnce");
+  let schoolRecommendedHoursAtOnce = 1;
+  // let schoolRecommendedHoursAtOnce = input.value || 1;
+  // if (schoolRecommendedHoursAtOnce > 2) {
+  //   schoolRecommendedHoursAtOnce = 2;
+  // }
+  // if (schoolRecommendedHoursAtOnce < 1) {
+  //   schoolRecommendedHoursAtOnce = 1;
+  // }
+  // input.value = schoolRecommendedHoursAtOnce;
 
   const subjects = [
     {
@@ -1012,11 +1013,15 @@ function buildSchedule(tableJSON) {
     </table>`;
 
   const div = document.getElementsByClassName("main")[0];
-  div.innerHTML +=
-    "<p>TEACHER TABLE</p>" +
+  postMessage("<p>TEACHER TABLE</p>" +
     teacherTable +
     "<br><p>CLASS TABLE</p>" +
-    classTable;
+    classTable);
+  // div.innerHTML +=
+  //   "<p>TEACHER TABLE</p>" +
+  //   teacherTable +
+  //   "<br><p>CLASS TABLE</p>" +
+  //   classTable;
   
   const end = performance.now();
   console.log("TIME - ", end-start);
