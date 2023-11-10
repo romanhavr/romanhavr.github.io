@@ -46,7 +46,7 @@
       function useWorker (e) {
         if (window.Worker) {
           const myWorker = new Worker("123.js");
-          myWorker.postMessage(JSON.parse(JSON.stringify(e)));
+          myWorker.postMessage(JSON.parse(JSON.stringify(e.target.files[0])));
           console.log('Message posted to worker');
 
           myWorker.onmessage = function(e) {
@@ -54,7 +54,7 @@
           }
         } else {
           console.log('Your browser doesn\'t support web workers.');
-          handleFileSelect(e)
+          handleFileSelect(e.target.files[0])
         }
       }
     </script>
