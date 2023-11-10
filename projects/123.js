@@ -37,9 +37,10 @@ onmessage = function(e) {
 }
 
 function handleFileSelect(evt) {
-  const files = evt.target.files; // FileList object
+  // const files = evt.target.files; // FileList object
   const xl2json = new ExcelToJSON();
-  xl2json.parseExcel(files[0], buildSchedule);
+  xl2json.parseExcel(evt, buildSchedule);
+  // xl2json.parseExcel(files[0], buildSchedule);
 }
 // -------------------------------------
 
