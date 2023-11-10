@@ -43,10 +43,15 @@
         .addEventListener("change", useWorker, false);
         // .addEventListener("change", handleFileSelect, false);
 
+      function handleFileSelect(evt) {
+        const files = evt.target.files; // FileList object
+        const xl2json = new ExcelToJSON();
+        xl2json.parseExcel(files[0], useWorker);
+      }
       function useWorker (e) {
         if (window.Worker) {
           const myWorker = new Worker("123.js");
-          myWorker.postMessage(e.target.files[0]);
+          myWorker.postMessage(e);
           console.log('Message posted to worker');
 
           myWorker.onmessage = function(e) {
@@ -54,7 +59,7 @@
           }
         } else {
           console.log('Your browser doesn\'t support web workers.');
-          handleFileSelect(e.target.files[0])
+          buildSchedule(e)
         }
       }
     </script>
