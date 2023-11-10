@@ -1012,7 +1012,7 @@ function buildSchedule(tableJSON) {
         </tbody>
     </table>`;
 
-  const div = document.getElementsByClassName("main")[0];
+  // const div = document.getElementsByClassName("main")[0];
   postMessage("<p>TEACHER TABLE</p>" +
     teacherTable +
     "<br><p>CLASS TABLE</p>" +
