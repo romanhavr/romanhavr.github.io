@@ -1,33 +1,33 @@
 // reading data from XLS table
-const ExcelToJSON = function () {
-  this.parseExcel = function (file, callBack) {
-    var reader = new FileReader();
+// const ExcelToJSON = function () {
+//   this.parseExcel = function (file, callBack) {
+//     var reader = new FileReader();
 
-    reader.onload = function (e) {
-      var data = e.target.result;
-      var workbook = XLSX.read(data, {
-        type: "binary",
-      });
-      // workbook.SheetNames.forEach(function (sheetName) {
-      // Here is your object
-      var XL_row_object = XLSX.utils.sheet_to_row_object_array(
-        workbook.Sheets["Sheet1"]
-      );
-      var json_object = JSON.stringify(XL_row_object);
-      const tableJSON = JSON.parse(json_object);
-      console.log(tableJSON), json_object;
-      jQuery("#xlx_json").val(json_object);
-      callBack(tableJSON);
-      // })
-    };
+//     reader.onload = function (e) {
+//       var data = e.target.result;
+//       var workbook = XLSX.read(data, {
+//         type: "binary",
+//       });
+//       // workbook.SheetNames.forEach(function (sheetName) {
+//       // Here is your object
+//       var XL_row_object = XLSX.utils.sheet_to_row_object_array(
+//         workbook.Sheets["Sheet1"]
+//       );
+//       var json_object = JSON.stringify(XL_row_object);
+//       const tableJSON = JSON.parse(json_object);
+//       console.log(tableJSON), json_object;
+//       jQuery("#xlx_json").val(json_object);
+//       callBack(tableJSON);
+//       // })
+//     };
 
-    reader.onerror = function (ex) {
-      console.log(ex);
-    };
+//     reader.onerror = function (ex) {
+//       console.log(ex);
+//     };
 
-    reader.readAsBinaryString(file);
-  };
-};
+//     reader.readAsBinaryString(file);
+//   };
+// };
 
 onmessage = function(e) {
   console.log('Worker: Message received from main script', e.data);
