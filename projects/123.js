@@ -45,6 +45,7 @@ function handleFileSelect(evt) {
 // -------------------------------------
 
 function buildSchedule(tableJSON) {
+  console.log("TanleJSON - ", tableJSON);
   const start = performance.now();
   
   const classes = [
