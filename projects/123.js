@@ -32,7 +32,6 @@ const ExcelToJSON = function () {
 onmessage = function(e) {
   console.log('Worker: Message received from main script', e.data);
   buildSchedule(e.data);
-  // handleFileSelect(e);
   console.log('Worker: Posting message back to main script');
   postMessage(true);
 }
