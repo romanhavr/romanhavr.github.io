@@ -31,16 +31,16 @@ const ExcelToJSON = function () {
 
 onmessage = function(e) {
   console.log('Worker: Message received from main script', e.data);
-  handleFileSelect(e)
+  buildSchedule(e);
+  // handleFileSelect(e);
   console.log('Worker: Posting message back to main script');
   postMessage(true);
 }
 
 function handleFileSelect(evt) {
-  // const files = evt.target.files; // FileList object
+  const files = evt.target.files; // FileList object
   const xl2json = new ExcelToJSON();
-  xl2json.parseExcel(evt, buildSchedule);
-  // xl2json.parseExcel(files[0], buildSchedule);
+  xl2json.parseExcel(files[0], buildSchedule);
 }
 // -------------------------------------
 
