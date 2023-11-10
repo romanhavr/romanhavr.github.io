@@ -51,7 +51,7 @@
       function useWorker (e) {
         if (window.Worker) {
           const myWorker = new Worker("123.js");
-          myWorker.postMessage(e);
+          myWorker.postMessage(JSON.parse(JSON.stringify(e)));
           console.log('Message posted to worker');
 
           myWorker.onmessage = function(e) {
