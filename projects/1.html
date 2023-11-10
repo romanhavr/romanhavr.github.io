@@ -40,8 +40,8 @@
     <script>
       document
         .getElementById("upload")
-        .addEventListener("change", useWorker, false);
-        // .addEventListener("change", handleFileSelect, false);
+        // .addEventListener("change", useWorker, false);
+        .addEventListener("change", handleFileSelect, false);
 
       const ExcelToJSON = function () {
         this.parseExcel = function (file, callBack) {
