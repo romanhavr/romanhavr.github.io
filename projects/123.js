@@ -404,7 +404,7 @@ function buildSchedule(tableJSON) {
     },
   };
 
-  const input = window.document.getElementById("recommendedLessonsAtOnce");
+  const input = document.getElementById("recommendedLessonsAtOnce");
   let schoolRecommendedHoursAtOnce = input.value || 1;
   if (schoolRecommendedHoursAtOnce > 2) {
     schoolRecommendedHoursAtOnce = 2;
@@ -1011,7 +1011,7 @@ function buildSchedule(tableJSON) {
         </tbody>
     </table>`;
 
-  const div = window.document.getElementsByClassName("main")[0];
+  const div = document.getElementsByClassName("main")[0];
   div.innerHTML +=
     "<p>TEACHER TABLE</p>" +
     teacherTable +
